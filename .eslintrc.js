@@ -33,6 +33,7 @@ module.exports = {
         message: "Import 'Buffer' from 'buffer' module instead",
       },
     ],
+    'no-param-reassign': 0,
     // we use underscores to indicate private fields in classes
     'no-underscore-dangle': 'off',
     // we turn this off here, for all commonjs modules (e.g. test fixtures etc.)

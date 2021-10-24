@@ -17,6 +17,8 @@ export default class DockerRunner {
     } = funOptions
 
     this.#codeDir = codeDir
+    dockerOptions.hostServicePath =
+      dockerOptions.hostServicePath || process.env.DOCKER_HOST_PATH
     if (
       dockerOptions.hostServicePath &&
       this.#codeDir.startsWith(servicePath)

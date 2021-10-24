@@ -51,6 +51,7 @@ export default class DockerContainer {
     this.#provider = provider
     this.#servicePath = servicePath
     this.#dockerOptions = dockerOptions
+    this.#dockerOptions.host = this.#dockerOptions.host || 'localhost'
   }
 
   _baseImage(runtime) {
